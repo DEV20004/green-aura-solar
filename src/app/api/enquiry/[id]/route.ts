@@ -22,3 +22,5 @@ export async function DELETE(_: NextRequest, { params }: { params: { id: string 
     return NextResponse.json({ error: 'Failed' }, { status: 500 })
   }
 }
+await (Enquiry as any).findByIdAndUpdate(...)
+await (Enquiry as any).findByIdAndDelete(...)
